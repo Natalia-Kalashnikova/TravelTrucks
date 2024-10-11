@@ -1,16 +1,21 @@
 import css from "../NavigationBar/NavigationBar.module.css";
 import { NavLink } from "react-router-dom";
+import photo from '../../images/Logo.png';
+import photo2x from '../../images/Logo.png';
 
 const NavigationBar =()=>{
     return(
         <div className={css.navigationBarContainer}>
-            <img className={css.imgLogo} src="/src/images/Logo.png" alt="logo" />
+            <picture>
+                <source srcSet={`${photo2x} 2x`} />
+                <img className={css.imgLogo} src={photo} alt="logo" />
+            </picture>
             <NavLink className={({isActive})=> 
-                isActive ? css.activLink : css.link} to="/">
+                isActive ? css.activLink : css.link} to="/" end>
                     Home
             </NavLink>
             <NavLink className={({isActive})=> 
-                isActive ? css.activLink : css.link} to="/catalog">
+                isActive ? css.activLink : css.link} to="/catalog" end>
                     Catalog
             </NavLink>
         </div>
