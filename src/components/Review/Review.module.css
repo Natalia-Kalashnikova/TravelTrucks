@@ -1,4 +1,4 @@
-.reviwerContainer {
+.reviewerContainer {
     display: flex;
     flex-direction: column;
     gap: 16px;
@@ -27,7 +27,7 @@
     font-weight: 600;
     line-height: 32px; /* 133.333% */
   }
-  .reviwerWrapper {
+  .reviewerWrapper {
     display: flex;
     justify-content: start;
     align-items: center;

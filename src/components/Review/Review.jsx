@@ -5,8 +5,8 @@ const Review =({data})=>{
     return(
         <>
         {data ? (
-            <div className={css.reviwerContainer}>
-                <div className={css.reviwerWrapper}>
+            <div className={css.reviewerContainer}>
+                <div className={css.reviewerWrapper}>
                     <div className={css.avatar}>{data.reviewer_name.charAt(0).toUpperCase()}</div>
                     <div className={css.reviewer}>
                         <p className={css.reviewerName}>{data.reviewer_name}</p>

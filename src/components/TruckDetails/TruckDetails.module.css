@@ -57,6 +57,6 @@
   .infoWrapper {
     display: flex;
     align-items: start;
-    justify-content: center;
+    /* justify-content: center; */
     gap: 40px;
   }

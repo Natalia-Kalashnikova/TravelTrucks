@@ -3,5 +3,16 @@
     gap: 4px;
   }
 
-  /* .iconRatingActiv
-  .iconRating */
+  .iconRatingActive,
+  .iconRating {
+    width: 16px;
+    height: 16px;
+  }
+
+  .iconRating {
+    fill: #F2F4F7;
+  }
+
+  .iconRatingActive{
+    fill: #FFC531;
+  }

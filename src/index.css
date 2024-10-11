@@ -1,6 +1,13 @@
-body {
+/* body {
   font-family: sans-serif;
   line-height: 1.5;
+}
+
+body {
+  background: #ffffff;
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 400;
 }
 
 h1,
@@ -24,11 +31,68 @@ img {
   max-width: 100%;
 }
 
+:root {
+  --color-main: #101828;
+  --color-text: #475467;
+  --color-gray: #6c717b;
+  --color-button: #e44848;
+  --color-button-hover: #d84343;
+  --color-rating: #ffc531;
+  --color-light-gray: #dadde1;
+  --color-icons: #f2f4f7;
+  --color-inputs: #f7f7f7;
+  --color-White: #ffffff;
+} */
+
 body {
-  background: var(--White);
+  letter-spacing: 0.04em;
+  width: 1440px;
+  background: #ffffff;
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  margin: 0;
+  font-weight: 500;
+}
+
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+label {
+  display: block;
 }
 
 :root {
