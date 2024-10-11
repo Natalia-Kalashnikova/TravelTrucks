@@ -1,0 +1,43 @@
+.reviwerContainer {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    align-items: start;
+  }
+  .comment {
+    color: var(--color-text, #475467);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .avatar {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    background: var(--color-icons, #f2f4f7);
+    color: var(--color-button, #e44848);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 133.333% */
+  }
+  .reviwerWrapper {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 16px;
+  }
+  .reviewerName {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+  }

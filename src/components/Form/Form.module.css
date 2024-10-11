@@ -1,0 +1,106 @@
+.form {
+    display: flex;
+    width: 641px;
+    min-height: 588px;
+    padding: 44px;
+    flex-direction: column;
+    border-radius: 10px;
+    border: 1px solid var(--color-light-gray, #dadde1);
+    position: relative;
+  }
+  .formTitle {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px; /* 120% */
+    margin-bottom: 8px;
+  }
+  .formText {
+    color: var(--color-gray, #6c717b);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    margin-bottom: 24px;
+  }
+  .input {
+    display: flex;
+    width: 100%;
+    height: 60px;
+    padding: 18px 18px 18px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: var(--color-inputs, #f7f7f7);
+    border: none;
+    outline: none;
+    margin-bottom: 14px;
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .input::placeholder {
+    color: var(--color-gray, #6c717b);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  .commentInput {
+    display: flex;
+    width: 100%;
+    height: 118px;
+    padding: 18px 18px 18px 18px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 12px;
+    background: var(--color-inputs, #f7f7f7);
+    border: none;
+    outline: none;
+    margin-bottom: 24px;
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    resize: none;
+  }
+  .dataPickew {
+    position: absolute;
+    bottom: -94px;
+    left: 37px;
+  }
+  .dataPick {
+    background: var(--color-inputs, #f7f7f7);
+  }
+  .sendBtn{
+    border: none;
+    outline: none;
+    width: fit-content;
+    display: flex;
+    padding: 16px 60px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 200px;
+    background: var(--color-button, #E44848);
+    color: var(--color-White, #FFF);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.08px;
+    transition: background 0.3s ease-in-out;
+    margin: 0 auto;
+  }
+  .sendBtn:hover{
+    background: var(--color-button-hover, #D84343);
+  }
