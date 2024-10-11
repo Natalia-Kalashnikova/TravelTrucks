@@ -1,0 +1,54 @@
+.truckTitleContainer {
+    margin-bottom: 28px;
+  }
+  .star {
+    width: 16px;
+    height: 16px;
+    position: relative;
+    top: -1.5px;
+  }
+  .text {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .rating {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 16px;
+  }
+  .location {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+  .name {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+    margin-bottom: 8px;
+  }
+  .price {
+    color: var(--color-main, #101828);
+    font-family: Inter;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px;
+  }

@@ -1,0 +1,12 @@
+.truckPhotosContainer {
+    display: flex;
+    gap: 48px;
+    flex-wrap: wrap;
+    margin-bottom: 28px;
+  }
+  .photo {
+    width: calc((100% - 144px) / 4);
+    height: 312px;
+    object-fit: cover;
+    border-radius: 10px;
+  }

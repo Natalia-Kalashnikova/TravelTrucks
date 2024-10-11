@@ -1,4 +1,4 @@
-import LocationFilter from '../LocationFilter/LocatiionFilter.jsx';
+import LocationFilter from '../LocatiionFilter/LocationFilter.jsx';
 import VehicleFilter from '../VehicleFilter/VehicleFilter.jsx';
 import css from './Filter.module.css';
 
