@@ -20,6 +20,12 @@
     font-weight: 500;
     line-height: 24px;
   }
+
+  .header{
+    position: sticky;
+    top: 0; 
+    z-index: 1000;
+  }
   .navigationBarContainer {
     position: relative;
     display: flex;
@@ -31,7 +37,7 @@
     background: var(--color-inputs, #f7f7f7);
   }
   .imgLogo {
-    position: absolute;
+    position: absolute; 
     left: 64px;
-    top: 32 px;
+    top: 32px;
   }
