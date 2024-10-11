@@ -1,4 +1,4 @@
-import css from "../NavigationBar/NavigationBar.module.css";
+import css from './NavigationBar.module.css';
 import { NavLink } from "react-router-dom";
 import photo from '../../images/Logo.png';
 import photo2x from '../../images/Logo.png';
