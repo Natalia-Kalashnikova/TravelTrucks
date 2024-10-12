@@ -1,10 +1,10 @@
 import sprite from "../../images/icon.svg";
 import css from './LocationFilter.module.css';
 import { useDispatch, useSelector } from "react-redux";
-import {selectLocation} from '../../redux/filter/selectors.js';
-import {setLocation} from '../../redux/filter/slice.js';
+import { selectLocation } from '../../redux/filter/selectors.js';
+import { setLocation } from '../../redux/filter/slice.js';
 
-const LocationFilter=()=>{
+const LocationFilter =()=> {
     const dispatch = useDispatch();
     const location = useSelector(selectLocation);
     
@@ -28,14 +28,14 @@ const LocationFilter=()=>{
             />
             <div className={css.locationWrapper}>
                 {location ? (
-                    <div className={css.locationActivIcon}>
-                        <svg>
+                    <div >
+                        <svg className={css.locationActiveIcon}>
                             <use xlinkHref={`${sprite}#icon-map`}></use>
                         </svg>
                     </div>                    
                 ) : (
-                    <div className={css.locationIcon}>
-                        <svg>
+                    <div >
+                        <svg className={css.locationIcon}>
                         <use xlinkHref={`${sprite}#icon-map`}></use>
                         </svg>
                     </div>
