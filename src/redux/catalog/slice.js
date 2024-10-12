@@ -4,6 +4,7 @@ import {
   fetchAllTrucksForFirstPage,
   fetchTruckById,
 } from './operations.js';
+
 const initialState = {
   trucks: [],
   isLoadingTruck: false,
@@ -15,6 +16,7 @@ const initialState = {
   hasMore: false,
   total: 0,
 };
+
 const catalogSlice = createSlice({
   name: 'catalog',
   initialState,
@@ -70,4 +72,5 @@ const catalogSlice = createSlice({
       });
   },
 });
+
 export default catalogSlice.reducer;

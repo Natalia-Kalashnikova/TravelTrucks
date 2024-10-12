@@ -1,4 +1,5 @@
 import { createSlice } from '@reduxjs/toolkit';
+
 const initialState = {
   location: '',
   form: '',
@@ -8,6 +9,7 @@ const initialState = {
   TV: false,
   bathroom: false,
 };
+
 const filterSlice = createSlice({
   name: 'filter',
   initialState,
@@ -35,6 +37,7 @@ const filterSlice = createSlice({
     },
   },
 });
+
 export const {
   setLocation,
   setForm,
@@ -45,4 +48,5 @@ export const {
   toggleBathroom,
   resetFilters,
 } = filterSlice.actions;
+
 export default filterSlice.reducer;

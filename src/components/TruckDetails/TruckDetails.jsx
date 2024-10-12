@@ -31,7 +31,7 @@ const TruckDetails =()=>{
                     </div>
                 </div>
                 <div className={css.infoWrapper}>
-                    <div className={css.detalReviews}>
+                    <div className={css.detailReviews}>
                         {isLinkActive === 'features' ? <TruckMainInfo /> : <TruckReviews />}
                     </div>
                     <Form />

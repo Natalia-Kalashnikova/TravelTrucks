@@ -9,6 +9,7 @@ export const fetchAllTrucks = createAsyncThunk(
     const { catalog, filter } = thunkAPI.getState();
     const { page } = catalog;
     const { location, form, AC, transmission, kitchen, TV, bathroom } = filter;
+    
     const params = new URLSearchParams({
       page,
       limit: 4,
@@ -20,6 +21,7 @@ export const fetchAllTrucks = createAsyncThunk(
       ...(TV && { TV: true }),
       ...(bathroom && { bathroom: true }),
     });
+
     try {
       const response = await axios.get(`${BASE_URL}/campers?${params}`);
       return response.data;
@@ -28,11 +30,13 @@ export const fetchAllTrucks = createAsyncThunk(
     }
   }
 );
+
 export const fetchAllTrucksForFirstPage = createAsyncThunk(
   'catalog/fetchAllTrucksForFirstPage',
   async (_, thunkAPI) => {
     const { filter } = thunkAPI.getState();
     const { location, form, AC, transmission, kitchen, TV, bathroom } = filter;
+    
     const params = new URLSearchParams({
       page: 1,
       limit: 4,
@@ -44,6 +48,7 @@ export const fetchAllTrucksForFirstPage = createAsyncThunk(
       ...(TV && { TV: true }),
       ...(bathroom && { bathroom: true }),
     });
+    
     try {
       const response = await axios.get(`${BASE_URL}/campers?${params}`);
       return response.data;
@@ -52,6 +57,7 @@ export const fetchAllTrucksForFirstPage = createAsyncThunk(
     }
   }
 );
+
 export const fetchTruckById = createAsyncThunk(
   'catalog/fetchTruckById',
   async (id, thunkAPI) => {
