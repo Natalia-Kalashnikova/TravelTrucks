@@ -23,15 +23,15 @@ const TrucksList = () => {
 
     return (
         <div className={css.trucksListContainer}>
-            {trucks.length > 0 
-                ? trucks.map(item => <TruckItem key={item.id} data={item} />) 
-                : null}
+            {trucks.length > 0
+                ? trucks.map(item => <TruckItem key={item.id} data={item} />)
+                : !isLoading && <p>Nothing found matching your request!</p>}
             
-            {isLoading && <Loader />} 
+            {isLoading && <Loader />}
 
             {!isLoading && hasNextPage && (
-                <button 
-                    className={css.loadMore} 
+                <button
+                    className={css.loadMore}
                     onClick={getNextPageTrucks}
                 >
                     Load more
@@ -42,4 +42,6 @@ const TrucksList = () => {
 }
 
 export default TrucksList;
+
+
 

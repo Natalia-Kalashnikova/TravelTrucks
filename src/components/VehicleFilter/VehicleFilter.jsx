@@ -19,6 +19,7 @@ import {
     toggleTV,
   } from '../../redux/filter/slice.js';
   import toast from 'react-hot-toast';
+  
 
   const VehicleFilter =()=> {
     const form = useSelector(selectForm);
@@ -45,34 +46,34 @@ import {
             className={AC ? css.eqItemActive : css.eqItem}
             onClick={() => dispatch(toggleAC())}
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-wind`}></use>
-            </svg>           
+            </svg>
             <p className={css.itemText}>AC</p>
           </div>
           <div
             className={transmission ? css.eqItemActive : css.eqItem}
             onClick={() => dispatch(setTransmission())}
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-diagram`}></use>
-            </svg>  
+            </svg >
             <p className={css.itemText}>Automatic</p>
           </div>
           <div
             className={kitchen ? css.eqItemActive : css.eqItem}
             onClick={() => dispatch(toggleKitchen())}
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-cup-hot`}></use>
-            </svg> 
+            </svg>
             <p className={css.itemText}>Kitchen</p>
           </div>
           <div
             className={tv ? css.eqItemActive : css.eqItem}
             onClick={() => dispatch(toggleTV())}
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-tv`}></use>
             </svg>
             <p className={css.itemText}>TV</p>
@@ -81,8 +82,8 @@ import {
             className={bathroom ? css.eqItemActive : css.eqItem}
             onClick={() => dispatch(toggleBathroom())}
           >
-            <svg>
-                <use xlinkHref={`${sprite}#icon-bi_droplet`}></use>
+            <svg className={css.icon}>
+                <use xlinkHref={`${sprite}#icon-bi-droplet`}></use>
             </svg>
             <p className={css.itemText}>Bathroom</p>
           </div>
@@ -99,7 +100,7 @@ import {
                 : dispatch(setForm('alcove'))
             }
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-bi-grid-3x3-gap`}></use>
             </svg>
             <p className={css.itemText}>Van</p>
@@ -114,7 +115,7 @@ import {
                 : dispatch(setForm('fullyIntegrated'))
             }
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#icon-bi-grid`}></use>
             </svg>
             <p className={css.itemText}>Fully Integrated</p>
@@ -129,7 +130,7 @@ import {
                 : dispatch(setForm('panelTruck'))
             }
           >
-            <svg>
+            <svg className={css.icon}>
                 <use xlinkHref={`${sprite}#bi-grid-1x2`}></use>
             </svg>
             <p className={css.itemText}>Alcove</p>
@@ -144,3 +145,4 @@ import {
   }
 
   export default VehicleFilter;
+

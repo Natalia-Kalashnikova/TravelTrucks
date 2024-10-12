@@ -1,100 +1,107 @@
 .title {
-    color: var(--color-text, #475467);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 32px;
-  }
-  .filterTitle {
-    color: var(--color-main, #101828);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-bottom: 48px;
-    position: relative;
-  }
-  .filterTitle::after {
-    position: absolute;
-    bottom: -24px;
-    left: 0;
-    content: '';
-    width: 360px;
-    height: 1px;
-    background-color: var(--color-light-gray, #dadde1);
-  }
-  .equipment,
-  .type {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 12px;
-    width: 360px;
-    margin-bottom: 32px;
-  }
-  .eqItem,
-  .typeItem {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    border-radius: 12px;
-    border: 1px solid var(--color-light-gray, #dadde1);
-    mix-blend-mode: multiply;
-    width: 112px;
-    height: 96px;
-    cursor: pointer;
-    user-select: none;
-    transition: border 0.3s ease-in-out;
-  }
-  .eqItemActive,
-  .typeItemActive{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    gap: 8px;
-    border-radius: 12px;
-    border: 1px solid var(--color-button, #E44848);
-    mix-blend-mode: multiply;
-    width: 112px;
-    height: 96px;
-    cursor: pointer;
-    user-select: none;
-    transition: border 0.3s ease-in-out;
-  }
-  .itemText {
-    color: var(--color-main, #101828);
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px;
-    letter-spacing: -0.08px;
-  }
-  .searchBtn {
-    display: flex;
-    width: 166px;
-    justify-content: center;
-    align-items: center;
-    border-radius: 200px;
-    background: var(--color-button, #e44848);
-    height: 56px;
-    border: none;
-    outline: none;
-    color: var(--White, #FFF);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-    letter-spacing: -0.08px;
-    transition: background 0.3s ease-in-out;
-  }
-  .searchBtn:hover{
-      background: var(--color-button-hover, #D84343);
-  }
+  color: var(--color-text, #475467);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  margin-bottom: 32px;
+}
+.filterTitle {
+  color: var(--color-main, #101828);
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  margin-bottom: 48px;
+  position: relative;
+}
+.filterTitle::after {
+  position: absolute;
+  bottom: -24px;
+  left: 0;
+  content: '';
+  width: 360px;
+  height: 1px;
+  background-color: var(--color-light-gray, #dadde1);
+}
+
+.equipment,
+.type {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  width: 360px;
+  margin-bottom: 32px;
+}
+.eqItem,
+.typeItem {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--color-light-gray, #dadde1);
+  mix-blend-mode: multiply;
+  width: 112px;
+  height: 96px;
+  cursor: pointer;
+  user-select: none;
+  transition: border 0.3s ease-in-out;
+}
+.eqItemActive,
+.typeItemActive {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 8px;
+  border-radius: 12px;
+  border: 1px solid var(--color-button, #e44848);
+  mix-blend-mode: multiply;
+  width: 112px;
+  height: 96px;
+  cursor: pointer;
+  user-select: none;
+  transition: border 0.3s ease-in-out;
+}
+.itemText {
+  color: var(--color-main, #101828);
+  text-align: center;
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: -0.08px;
+}
+.searchBtn {
+  display: flex;
+  width: 166px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 200px;
+  background: var(--color-button, #e44848);
+  height: 56px;
+  border: none;
+  outline: none;
+  color: var(--White, #fff);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.08px;
+  transition: background 0.3s ease-in-out;
+}
+.searchBtn:hover {
+  background: var(--color-button-hover, #d84343);
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  fill: var(--color-main, #101828);
+}
