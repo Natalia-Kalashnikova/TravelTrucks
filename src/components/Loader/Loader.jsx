@@ -1,14 +1,15 @@
 import { Oval } from "react-loader-spinner";
+import css from './Loader.module.css'
 
-const Loader =({width, height, color = "#e44848"}) => {
+const Loader =() => {
     return (
-      <div>
+      <div className={css.loaderWrapper}>
         <Oval
           visible={true}
-          height={width}
-          width={height}
-          color={color}
-          ariaLabel="three-circles-loading"
+          height="80"
+          width="80"
+          color="#4fa94d"
+          ariaLabel="oval-loading"
           wrapperStyle={{}}
           wrapperClass=""
         />
