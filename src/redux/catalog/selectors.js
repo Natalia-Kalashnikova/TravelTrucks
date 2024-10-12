@@ -12,3 +12,4 @@ export const selectTruck = state => state.catalog.selectedTruck;
 export const selectIsLoadingTruck = state => state.catalog.isLoadingTruck;
 
 export const selectErrorTruck = state => state.catalog.errorTruck;
+

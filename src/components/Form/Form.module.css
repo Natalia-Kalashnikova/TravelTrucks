@@ -73,21 +73,22 @@
   line-height: 24px; /* 150% */
   resize: none;
 }
-.dataPickew {
+.dataPicker {
   position: absolute;
   bottom: -94px;
-  left: 37px;
+  left: 62px;
 }
 .dataPick {
   background: var(--color-inputs, #f7f7f7);
 }
+
 .sendBtn,
 .selectDateBtn {
   border: none;
   outline: none;
   width: fit-content;
   display: flex;
-  padding: 16px 60px;
+  padding: 16px 55px;
   justify-content: center;
   align-items: center;
   border-radius: 200px;

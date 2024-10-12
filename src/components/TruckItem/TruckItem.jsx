@@ -16,7 +16,7 @@ const TruckItem = ({ data }) => {
   };
 
     return (
-        <div className={css.truckItemContainer}>
+      <div className={css.truckItemContainer}>
           <img
             src={data.gallery[0].thumb}
             alt="truck photo"
@@ -24,16 +24,16 @@ const TruckItem = ({ data }) => {
           />
           <div className={css.data}>
             <div className={css.head}>
-              <h2 className={css.name}>{data.name}</h2>             
+              <h2 className={css.name}>{data.name}</h2>
             <div className={css.priceWrapper}>
               <p className={css.price}>€{data.price}.00</p>
               <div onClick={handleFavoriteClick}>
                 {isFavorite ? (
-                  <svg className={css.heartIcon}>
+                  <svg className={css.redHeartIcon}>
                     <use xlinkHref={`${sprite}#icon-property-heart`}></use>
                   </svg>
                 ) : (
-                  <svg className={css.redHeartIcon}>
+                  <svg className={css.heartIcon}>
                     <use xlinkHref={`${sprite}#icon-property-heart`}></use>
                   </svg>
                 )}
@@ -42,21 +42,18 @@ const TruckItem = ({ data }) => {
             </div>
             <div className={css.rating}>
               <span className={css.text}>
-                <div className={css.star}>
-                  <svg>
-                    <use xlinkHref={`${sprite}#icon-Rating`}></use>
+                  <svg className={css.star}>
+                    <use xlinkHref={`${sprite}#icon-rating`}></use>
                   </svg>
-                </div>
                 {`${data.rating}(${data.reviews.length} Reviews)`}
               </span>
-              <span className={css.location}>
-                <svg>
+              <span className={css.locationWrapper}>
+                <svg className={css.location}>
                 <use xlinkHref={`${sprite}#icon-map`}></use>
                 </svg>
                 {data.location}
               </span>
           </div>
-          
             <p className={css.description}>{data.description}</p>
             <TruckOption data={data} />
             <Link to={`/catalog/${data.id}`} className={css.showMoreBtn}>
@@ -68,3 +65,4 @@ const TruckItem = ({ data }) => {
 }
 
 export default TruckItem;
+
