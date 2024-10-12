@@ -35,6 +35,15 @@ const filterSlice = createSlice({
     toggleBathroom: state => {
       state.bathroom = !state.bathroom;
     },
+    resetFilters: (state) => {
+      state.location = '';
+      state.form = '';
+      state.AC = false;
+      state.transmission = false;
+      state.kitchen = false;
+      state.TV = false;
+      state.bathroom = false;
+    },
   },
 });
 

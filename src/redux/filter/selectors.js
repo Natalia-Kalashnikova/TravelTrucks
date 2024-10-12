@@ -11,3 +11,4 @@ export const selectKitchen = state => state.filter.kitchen;
 export const selectTV = state => state.filter.TV;
 
 export const selectBathroom = state => state.filter.bathroom;
+
