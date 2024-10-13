@@ -75,15 +75,14 @@
 }
 .dataPicker {
   position: absolute;
-  bottom: -94px;
+  bottom: -73px;
   left: 62px;
 }
 .dataPick {
   background: var(--color-inputs, #f7f7f7);
 }
 
-.sendBtn,
-.selectDateBtn {
+.sendBtn {
   border: none;
   outline: none;
   width: fit-content;
@@ -105,4 +104,27 @@
 }
 .sendBtn:hover {
   background: var(--color-button-hover, #d84343);
+}
+
+.selectDateBtn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 200px;
+  padding: 16px 32px;
+  border: 1px solid var(--color-light-gray, #dadde1);
+  color: var(--Main, #101828);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.08px;
+  background: transparent;
+  outline: none;
+  transition: border 0.3s ease-in-out;
+  margin: 0 auto;
+}
+.selectDateBtn:hover {
+  border: 1px solid var(--color-button-hover, #d84343);
 }
