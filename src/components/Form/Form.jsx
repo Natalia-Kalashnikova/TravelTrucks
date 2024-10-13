@@ -48,8 +48,14 @@ const Form = () => {
     const handleSendForm = e => {
         e.preventDefault();
         const { startDate, endDate } = state[0];
+
+        if (!endDate) {
+            toast.error('Please select a booking date!');
+            return;
+        }
+
         toast.success(
-            `Your data has been sent successfully! name: ${formState.name}, email: ${formState.email}, date: ${formatDate(startDate, endDate)}`,
+            `Your data has been sent successfully! Name: ${formState.name}, email: ${formState.email}, date: ${formatDate(startDate, endDate)}`,
             { duration: 8000 }
         );
 
@@ -99,6 +105,7 @@ const Form = () => {
             <input
                 className={css.input}
                 type="text"
+                required
                 placeholder="Booking date*"
                 onClick={toggleDatePicker}
                 value={state[0].endDate ? formatDate(state[0].startDate, state[0].endDate) : ''}
