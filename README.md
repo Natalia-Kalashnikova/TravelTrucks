@@ -11,10 +11,11 @@ reviews, and make bookings.
 - **Home Page**: Showcases the main services with a prominent call to action.
   ![Home page](https://github.com/Natalia-Kalashnikova/TravelTrucks/blob/main/src/assets/Home-page.png)
 - **Camper Catalog**: Displays all available campers with filtering options
-  (location, body type, amenities). ![Catalog page](src\assets\Catalog.png)
+  (location, body type, amenities).
+  ![Catalog page](https://github.com/Natalia-Kalashnikova/TravelTrucks/blob/main/src/assets/Catalog.png)
 - **Individual Camper Page**: Provides detailed information about a selected
   camper, including a gallery of images, user reviews, and a booking form.
-  ![Trucks page](src\assets\Trucks-page.png)
+  ![Trucks page](https://github.com/Natalia-Kalashnikova/TravelTrucks/blob/main/src/assets/Trucks-page.png)
 
 ### Main API Endpoints
 
