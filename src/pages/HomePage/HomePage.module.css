@@ -1,4 +1,6 @@
 .homePageContainer {
+  padding: 260px 64px;
+
   background-image: linear-gradient(
       0deg,
       rgba(0, 0, 0, 0.2) 0%,
@@ -7,8 +9,6 @@
     url('/src/images/Hero.png');
   background-repeat: no-repeat;
   background-size: cover;
-  /* background-position: top left; */
-  padding: 260px 64px;
 }
 
 @media only screen and (min-resolution: 2dppx) {
@@ -21,46 +21,53 @@
       url('/src/images/Hero@2x.png');
     background-size: cover;
     background-repeat: no-repeat;
-    /* background-position: top left; */
   }
 }
 
 .homePageTitle {
-  color: var(--color-inputs, #f7f7f7);
+  margin-bottom: 16px;
+
   font-family: Inter;
   font-size: 48px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  margin-bottom: 16px;
-}
-.homePageText {
+
   color: var(--color-inputs, #f7f7f7);
-  font-family: Inter;
+}
+
+.homePageText {
+  margin-bottom: 40px;
+
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
-  margin-bottom: 40px;
+
+  color: var(--color-inputs, #f7f7f7);
 }
+
 .navBtn {
-  text-decoration: none;
   display: flex;
   width: 173px;
   height: 56px;
   justify-content: center;
   align-items: center;
-  border-radius: 200px;
-  background: var(--color-button, #e44848);
-  color: var(--color-White, #fff);
-  font-family: Inter;
+
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
-  line-height: 24px; /* 150% */
+  line-height: 24px;
   letter-spacing: -0.08px;
+
+  color: var(--color-White, #fff);
+  background: var(--color-button, #e44848);
+  border-radius: 200px;
+  text-decoration: none;
+
   transition: background 0.3s ease-in-out;
 }
+
 .navBtn:hover {
   background: var(--color-button-hover, #d84343);
 }

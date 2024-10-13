@@ -4,28 +4,33 @@
   gap: 8px;
   margin-bottom: 24px;
 }
+
 .optionItem {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 8px;
   padding: 12px 18px;
+
   border-radius: 100px;
   background: var(--color-icons, #f2f4f7);
+
   mix-blend-mode: multiply;
 }
+
 .optionText {
-  color: var(--color-main, #101828);
-  text-align: center;
-  font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
+  text-align: center;
+
+  color: var(--color-main, #101828);
 }
 
 .icon {
   width: 20px;
   height: 20px;
+
   fill: #101828;
 }

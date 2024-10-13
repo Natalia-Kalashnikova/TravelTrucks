@@ -1,210 +1,55 @@
-/* .truckItemContainer {
-  width: 100%;
-  height: 424px;
-  display: flex;
-  padding: 24px;
-  align-items: flex-start;
-  gap: 24px;
-  border-radius: 20px;
-  border: 1px solid var(--color-light-gray, #dadde1);
-  background: var(--color-White, #fff);
-}
-
-.photo {
-  width: 292px;
-  height: 320px;
-  object-fit: cover;
-  border-radius: 10px;
-}
-
-.data {
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.head {
-  width: 100%;
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
-  margin-bottom: 8px;
-}
-.name {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-}
-.price {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 32px;
-}
-.heartIcon,
-.redHeartIcon {
-  width: 24px;
-  height: 24px;
-}
-
-.redHeartIcon {
-  stroke: var(--color-button, #e44848);
-  fill: var(--color-button, #e44848);
-}
-
-.star {
-  width: 16px;
-  height: 16px;
-  fill: #ffc531;
-  position: relative;
-  top: -1.5px;
-}
-.text {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-  display: flex;
-  align-items: center;
-  gap: 4px;
-
-  text-decoration: underline;
-  text-decoration-skip-ink: none;
-}
-.rating {
-  display: flex;
-  align-items: center;
-  gap: 16px;
-  margin-bottom: 24px;
-}
-.location {
-  width: 16px;
-  height: 16px;
-}
-
-.locationWrapper {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px; 
-  display: flex;
-  align-items: center;
-  gap: 4px;
-}
-
-.description {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: box;
-  width: 525px;
-  -webkit-box-orient: vertical;
-  -moz-box-orient: vertical;
-  -ms-flex-orient: vertical;
-  box-orient: vertical;
-  -webkit-line-clamp: 1;
-  line-clamp: 1;
-  overflow: hidden;
-  color: var(--color-text, #475467);
-  text-overflow: ellipsis;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
-  margin-bottom: 24px;
-}
-
-.showMoreBtn {
-  text-decoration: none;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  display: flex;
-  padding: 16px 40px;
-  justify-content: center;
-  align-items: center;
-  border: none;
-  outline: none;
-  border-radius: 200px;
-  background: var(--color-button, #e44848);
-  color: var(--color-White, #fff);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; 
-  letter-spacing: -0.08px;
-  transition: background 0.3s ease-in-out;
-
-  margin-top: 24px;
-}
-.showMoreBtn:hover {
-  background: var(--color-button-hover, #d84343);
-}
-
-.priceWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 12px;
-} */
-
 .truckItemContainer {
   width: 100%;
-  /* height: 424px; */
+
   display: flex;
-  padding: 24px;
-  /* align-items: flex-start; */
   gap: 24px;
-  border-radius: 20px;
-  border: 1px solid var(--color-light-gray, #dadde1);
+  padding: 24px;
+
   background: var(--color-White, #fff);
+  border: 1px solid var(--color-light-gray, #dadde1);
+  border-radius: 20px;
 }
 
 .photo {
   width: 292px;
   height: 320px;
+
   object-fit: cover;
   border-radius: 10px;
 }
 
 .data {
-  /* position: relative; */
   width: 100%;
   height: 100%;
 }
+
 .head {
-  width: 100%;
   display: flex;
   align-items: baseline;
   justify-content: space-between;
+  width: 100%;
   margin-bottom: 8px;
 }
+
 .name {
-  color: var(--color-main, #101828);
-  font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+
+  color: var(--color-main, #101828);
 }
+
 .price {
-  color: var(--color-main, #101828);
   font-family: Inter;
   font-size: 24px;
   font-style: normal;
   font-weight: 600;
   line-height: 32px;
+
+  color: var(--color-main, #101828);
 }
+
 .heartIcon,
 .redHeartIcon {
   width: 24px;
@@ -217,96 +62,103 @@
 }
 
 .star {
-  width: 16px;
-  height: 16px;
-  fill: #ffc531;
   position: relative;
   top: -1.5px;
+
+  width: 16px;
+  height: 16px;
+
+  fill: #ffc531;
 }
+
 .text {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
   display: flex;
   align-items: center;
   gap: 4px;
 
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-main, #101828);
+
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+
 .rating {
   display: flex;
   align-items: center;
   gap: 16px;
   margin-bottom: 24px;
 }
+
 .location {
   width: 16px;
   height: 16px;
 }
 
 .locationWrapper {
-  color: var(--color-main, #101828);
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
   display: flex;
   align-items: center;
   gap: 4px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-main, #101828);
 }
 
 .description {
+  display: box;
+
   display: -webkit-box;
   display: -moz-box;
   display: -ms-flexbox;
-  display: box;
-  width: 525px;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   -ms-flex-orient: vertical;
   box-orient: vertical;
   -webkit-line-clamp: 1;
   line-clamp: 1;
-  overflow: hidden;
-  color: var(--color-text, #475467);
-  text-overflow: ellipsis;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 24px;
+
+  width: 525px;
   margin-bottom: 24px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-text, #475467);
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .showMoreBtn {
-  text-decoration: none;
-  /* position: absolute; */
   bottom: 0;
   left: 0;
+
   display: flex;
-  padding: 16px 40px;
+  display: inline-block;
   justify-content: center;
   align-items: center;
-  border: none;
-  outline: none;
-  border-radius: 200px;
-  background: var(--color-button, #e44848);
-  color: var(--color-White, #fff);
+  padding: 16px 40px;
+
   font-family: Inter;
   font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 24px;
   letter-spacing: -0.08px;
-  transition: background 0.3s ease-in-out;
 
-  display: inline-block;
+  color: var(--color-White, #fff);
+  background: var(--color-button, #e44848);
+  border: none;
+  border-radius: 200px;
+  outline: none;
+  text-decoration: none;
+
+  transition: background 0.3s ease-in-out;
 }
+
 .showMoreBtn:hover {
   background: var(--color-button-hover, #d84343);
 }

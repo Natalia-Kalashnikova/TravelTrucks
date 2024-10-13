@@ -1,12 +1,14 @@
-import css from './TruckItem.module.css';
 import sprite from "../../images/icon.svg";
-import TruckOption from '../TruckOption/TruckOption.jsx';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { selectFavoriteList } from '../../redux/favorite/selectors.js';
 import { toggleFavorite } from '../../redux/favorite/slice.js';
+import TruckOption from '../TruckOption/TruckOption.jsx';
+import css from './TruckItem.module.css';
+
 
 const TruckItem = ({ data }) => {
+  
   const dispatch = useDispatch();
   const favoriteList = useSelector(selectFavoriteList);
   const isFavorite = favoriteList.includes(data.id);

@@ -1,47 +1,58 @@
 .vehicleDetailsContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    position: relative;
-  }
-  .container::before {
-    position: absolute;
-    top: 48px;
-    left: 0;
-    content: '';
-    height: 1px;
-    width: 100%;
-    background-color: var(--color-light-gray, #dadde1);
-  }
-  .title {
-    color: var(--color-main, #101828);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    margin-bottom: 48px;
-  }
-  .list {
-    display: flex;
-    flex-direction: column;
-    align-items: start;
-    width: 100%;
-    gap: 16px;
-  }
-  .item {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .text {
-    color: var(--color-main, #101828);
-    text-align: center;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 24px; /* 150% */
-  }
+  position: relative;
+
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 100%;
+}
+
+.container::before {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  content: '';
+
+  height: 1px;
+  width: 100%;
+
+  background-color: var(--color-light-gray, #dadde1);
+}
+
+.title {
+  margin-bottom: 48px;
+
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+
+  color: var(--color-main, #101828);
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 16px;
+
+  width: 100%;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.text {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+
+  color: var(--color-main, #101828);
+}

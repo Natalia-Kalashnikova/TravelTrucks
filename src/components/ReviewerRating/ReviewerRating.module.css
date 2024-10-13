@@ -1,18 +1,18 @@
 .ratingContainer {
-    display: flex;
-    gap: 4px;
-  }
+  display: flex;
+  gap: 4px;
+}
 
-  .iconRatingActive,
-  .iconRating {
-    width: 16px;
-    height: 16px;
-  }
+.iconRatingActive,
+.iconRating {
+  width: 16px;
+  height: 16px;
+}
 
-  .iconRating {
-    fill: #F2F4F7;
-  }
+.iconRating {
+  fill: #f2f4f7;
+}
 
-  .iconRatingActive{
-    fill: #FFC531;
-  }
+.iconRatingActive {
+  fill: #ffc531;
+}

@@ -1,12 +1,14 @@
 import { selectAllTrucks, selectHasMore, selectIsLoading } from '../../redux/catalog/selectors.js';
 import { fetchAllTrucks } from '../../redux/catalog/operations.js';
-import TruckItem from '../TruckItem/TruckItem.jsx';
 import { useDispatch, useSelector } from 'react-redux';
 import toast from 'react-hot-toast';
-import css from './TrucksList.module.css';
+import TruckItem from '../TruckItem/TruckItem.jsx';
 import Loader from '../Loader/Loader.jsx';
+import css from './TrucksList.module.css';
+
 
 const TrucksList = () => {
+    
     const dispatch = useDispatch();
     const hasNextPage = useSelector(selectHasMore);
     const trucks = useSelector(selectAllTrucks);
@@ -42,6 +44,7 @@ const TrucksList = () => {
 }
 
 export default TrucksList;
+
 
 
 

@@ -1,14 +1,17 @@
 import { useSelector } from "react-redux";
-import css from './TruckDetails.module.css';
 import {selectTruck} from '../../redux/catalog/selectors.js';
 import { useState } from "react";
 import TruckMainInfo from '../TruckMainInfo/TruckMainInfo.jsx';
 import TruckReviews from '../TruckReviews/TruckReviews.jsx';
 import Form from '../Form/Form.jsx';
+import css from './TruckDetails.module.css';
 
-const TruckDetails =()=>{
+
+const TruckDetails = () => {
+    
     const [isLinkActive, setIsLinkActive] = useState('features');
     const data = useSelector(selectTruck);
+
     return(
         <>
         {data ? (

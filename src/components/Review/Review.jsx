@@ -1,7 +1,9 @@
 import ReviewerRating from '../ReviewerRating/ReviewerRating.jsx';
 import css from './Review.module.css';
 
-const Review =({data})=>{
+
+const Review = ({ data }) => {
+    
     return(
         <>
         {data ? (

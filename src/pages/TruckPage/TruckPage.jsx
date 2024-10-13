@@ -1,27 +1,30 @@
 import { useParams } from 'react-router-dom';
-import css from '../TruckPage/TruckPage.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { useEffect } from 'react';
 import { fetchTruckById } from '../../redux/catalog/operations.js';
+import { selectIsLoadingTruck } from '../../redux/catalog/selectors.js';
 import TruckTitle from '../../components/TruckTitle/TruckTitle.jsx';
 import TruckPhotos from '../../components/TruckPhotos/TruckPhotos.jsx';
 import TruckDetails from '../../components/TruckDetails/TruckDetails.jsx';
-import { selectIsLoadingTruck } from '../../redux/catalog/selectors.js';
 import Loader from '../../components/Loader/Loader.jsx';
+import css from '../TruckPage/TruckPage.module.css';
 
 
-const TruckPage =()=>{
-    const {id}= useParams();
-    const dispatch = useDispatch();
-    const isLoading = useSelector(selectIsLoadingTruck);
+const TruckPage = () => {
+  
+  const {id}= useParams();
+  const dispatch = useDispatch();
+  const isLoading = useSelector(selectIsLoadingTruck);
 
-    useEffect(()=>{
+  useEffect(() => {
+      
         if(id) {
             dispatch(fetchTruckById(id));
         }
     }, [id, dispatch]);
 
-      if (isLoading) {
+  if (isLoading) {
+        
     return (
       <div
         style={{

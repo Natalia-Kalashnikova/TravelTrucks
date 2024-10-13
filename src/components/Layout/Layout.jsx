@@ -1,7 +1,9 @@
 import { Toaster } from "react-hot-toast";
 import NavigationBar from "../NavigationBar/NavigationBar.jsx";
 
-const Layout =({children})=>{
+
+const Layout = ({ children }) => {
+    
     return(
         <div>
             <NavigationBar />

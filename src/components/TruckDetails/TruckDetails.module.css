@@ -1,62 +1,75 @@
 .truckDescription {
-    color: var(--color-text, #475467);
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 24px; /* 150% */
-    margin-bottom: 60px;
-  }
-  .links {
-    display: flex;
-    gap: 40px;
-    position: relative;
-    margin-bottom: 68px;
-  }
-  .links::after {
-    position: absolute;
-    z-index: 1;
-    bottom: -24px;
-    left: 0;
-    content: ' ';
-    width: 100%;
-    height: 1px;
-    background-color: var(--color-light-gray, #dadde1);
-  }
-  .features,
-  .reviews {
-    color: var(--color-main, #101828);
-    font-family: Inter;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 24px;
-    cursor: pointer;
-    user-select: none;
-  }
-  .underlineRight {
-    z-index: 2;
-    position: absolute;
-    bottom: -26px;
-    left: 0;
-    width: 85px;
-    height: 5px;
-    background-color: var(--color-button, #e44848);
-    transition: all 0.3s ease-in-out;
-  }
-  .underlineLeft {
-    z-index: 2;
-    position: absolute;
-    bottom: -26px;
-    left: 120px;
-    width: 85px;
-    height: 5px;
-    background-color: var(--color-button, #e44848);
-    transition: all 0.3s ease-in-out;
-  }
-  .infoWrapper {
-    display: flex;
-    align-items: start;
-    /* justify-content: center; */
-    gap: 40px;
-  }
+  margin-bottom: 60px;
+
+  font-size: 16px;
+  line-height: 24px;
+
+  color: var(--color-text, #475467);
+}
+
+.links {
+  position: relative;
+
+  display: flex;
+  gap: 40px;
+  margin-bottom: 68px;
+}
+
+.links::after {
+  position: absolute;
+  z-index: 1;
+  bottom: -24px;
+  left: 0;
+  content: ' ';
+  width: 100%;
+  height: 1px;
+
+  background-color: var(--color-light-gray, #dadde1);
+}
+
+.features,
+.reviews {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px;
+  cursor: pointer;
+
+  color: var(--color-main, #101828);
+
+  user-select: none;
+}
+
+.underlineRight {
+  z-index: 2;
+  position: absolute;
+  bottom: -26px;
+  left: 0;
+
+  width: 85px;
+  height: 5px;
+
+  background-color: var(--color-button, #e44848);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.underlineLeft {
+  position: absolute;
+  z-index: 2;
+  bottom: -26px;
+  left: 120px;
+
+  width: 85px;
+  height: 5px;
+
+  background-color: var(--color-button, #e44848);
+
+  transition: all 0.3s ease-in-out;
+}
+
+.infoWrapper {
+  display: flex;
+  align-items: start;
+  gap: 40px;
+}

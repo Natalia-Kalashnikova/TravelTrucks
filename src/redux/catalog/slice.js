@@ -5,6 +5,7 @@ import {
   fetchTruckById,
 } from './operations.js';
 
+
 const initialState = {
   trucks: [],
   isLoadingTruck: false,

@@ -14,6 +14,7 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 
+
 const favoritePersistConfig = {
   key: 'favorite',
   storage,

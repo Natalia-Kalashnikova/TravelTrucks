@@ -1,9 +1,11 @@
-import css from './NavigationBar.module.css';
 import { NavLink } from "react-router-dom";
 import photo from '../../images/Logo.png';
 import photo2x from '../../images/Logo@2x.png';
+import css from './NavigationBar.module.css';
 
-const NavigationBar =()=>{
+
+const NavigationBar = () => {
+    
     return(
         <div className={css.header}>
             <div className={css.navigationBarContainer} >

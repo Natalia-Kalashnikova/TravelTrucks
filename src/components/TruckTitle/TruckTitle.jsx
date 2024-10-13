@@ -1,13 +1,15 @@
-import css from './TruckTitle.module.css';
 import { useSelector } from 'react-redux';
 import {selectTruck } from '../../redux/catalog/selectors.js';
 import sprite from "../../images/icon.svg";
+import css from './TruckTitle.module.css';
 
 
-const TruckTitle =()=>{
-    const data = useSelector(selectTruck);
+const TruckTitle = () => {
+    
+  const data = useSelector(selectTruck);
+
     return(
-        <>
+      <>
           {data ? (
             <div className={css.truckTitleContainer}>
                 <h2 className={css.name}>{data.name}</h2>
@@ -20,12 +22,14 @@ const TruckTitle =()=>{
                         </div>
                         {`${data.rating}(${data.reviews ? data.reviews.length : null} Reviews)`}
                     </span>
+                        
                     <span className={css.location}>
                             <svg className={css.locationIcon}>
                             <use xlinkHref={`${sprite}#icon-map`}></use>
                             </svg>
                             {data.location}
                     </span>
+                        
                 </div>
                 <p className={css.price}>€{data.price}</p>
             </div>

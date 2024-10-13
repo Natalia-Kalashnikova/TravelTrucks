@@ -1,9 +1,12 @@
 import { useSelector } from "react-redux";
-import css from './TruckPhotos.module.css';
 import {selectTruck} from '../../redux/catalog/selectors.js';
+import css from './TruckPhotos.module.css';
 
-const TruckPhotos=()=>{
+
+const TruckPhotos = () => {
+    
     const data = useSelector(selectTruck);
+
     return(
         <>
             {data ? (

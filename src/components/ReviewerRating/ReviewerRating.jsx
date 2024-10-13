@@ -1,6 +1,7 @@
 import sprite from "../../images/icon.svg"; 
 import css from './ReviewerRating.module.css';
 
+
 const ReviewerRating = ({ count }) => {
     const totalStar = 5;
 

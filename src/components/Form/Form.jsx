@@ -1,10 +1,11 @@
 import { useState } from "react";
-import css from './Form.module.css';
 import { DateRange } from "react-date-range";
 import 'react-date-range/dist/styles.css';
 import 'react-date-range/dist/theme/default.css';
 import { format } from "date-fns";
 import toast from "react-hot-toast";
+import css from './Form.module.css';
+
 
 const Form = () => {
     const [state, setState] = useState([
@@ -14,11 +15,13 @@ const Form = () => {
             key: 'selection'
         }
     ]);
+
     const [formState, setFormState] = useState({
         name: '',
         email: '',
         comment: '',
     });
+
     const [isDatePickerOpen, setIsDatePickerOpen] = useState(false);
 
     const toggleDatePicker = () => {
@@ -72,6 +75,7 @@ const Form = () => {
             <p className={css.formText}>
                 Stay connected! We are always ready to help you.
             </p>
+
             <input
                 className={css.input}
                 type="text"
@@ -81,6 +85,7 @@ const Form = () => {
                 onChange={handleChange}
                 value={formState.name}
             />
+
             <input
                 className={css.input}
                 type="email"
@@ -90,6 +95,7 @@ const Form = () => {
                 onChange={handleChange}
                 value={formState.email}
             />
+
             <input
                 className={css.input}
                 type="text"
@@ -98,6 +104,7 @@ const Form = () => {
                 value={state[0].endDate ? formatDate(state[0].startDate, state[0].endDate) : ''}
                 readOnly
             />
+
             {isDatePickerOpen && (
                 <div className={css.dataPicker}>
                     <DateRange
@@ -109,11 +116,14 @@ const Form = () => {
                         minDate={new Date()} 
                         rangeColors={['#475467']}
                     />
+
                     <button className={css.selectDateBtn} type="button" onClick={handleDateSelect}>
                         Select Date
                     </button>
+
                 </div>
             )}
+
             <textarea
                 className={css.commentInput}
                 name="comment"
@@ -121,7 +131,9 @@ const Form = () => {
                 onChange={handleChange}
                 value={formState.comment}
             />
+
             <button className={css.sendBtn} type="submit">Send</button>
+            
         </form>
     );
 };
