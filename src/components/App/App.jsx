@@ -6,7 +6,8 @@ import Loader from "../Loader/Loader.jsx";
 
 const HomePage = lazy(()=> import('../../pages/HomePage/HomePage.jsx'));
 const Catalog = lazy(()=> import('../../pages/Catalog/Catalog.jsx'));
-const TruckPage = lazy(()=> import('../../pages/TruckPage/TruckPage.jsx'));
+const TruckPage = lazy(() => import('../../pages/TruckPage/TruckPage.jsx'));
+const NotFoundPage = lazy(() => import('../../pages/NotFoundPage/NotFoundPage.jsx'));
 
 function App() {
   return (
@@ -25,9 +26,10 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/catalog" element={<Catalog />} />
           <Route path="/catalog/:id" element={<TruckPage />} />
+          <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </Suspense>
-    </Layout>    
+    </Layout>
   );
 }
 
