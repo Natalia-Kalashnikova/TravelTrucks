@@ -46,7 +46,7 @@ const Form = () => {
         e.preventDefault();
         const { startDate, endDate } = state[0];
         toast.success(
-            `Your data has been sent successfully! {name: ${formState.name}, email: ${formState.email}}, date: ${formatDate(startDate, endDate)}`,
+            `Your data has been sent successfully! name: ${formState.name}, email: ${formState.email}, date: ${formatDate(startDate, endDate)}`,
             { duration: 8000 }
         );
 

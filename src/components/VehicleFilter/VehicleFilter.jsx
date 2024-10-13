@@ -1,4 +1,3 @@
-import css from './VehicleFilter.module.css';
 import sprite from "../../images/icon.svg";
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchAllTrucksForFirstPage } from '../../redux/catalog/operations.js';
@@ -19,11 +18,16 @@ import {
     toggleTV,
     resetFilters,
 } from '../../redux/filter/slice.js';
-import toast from 'react-hot-toast';
 import { useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
+import {selectIsLoading} from '../../redux/catalog/selectors.js'
+import toast from 'react-hot-toast';
+import Loader from '../Loader/Loader.jsx';
+import css from './VehicleFilter.module.css';
+
 
 const VehicleFilter = () => {
+    
     const dispatch = useDispatch();
     const location = useLocation(); 
     const form = useSelector(selectForm);
@@ -32,6 +36,7 @@ const VehicleFilter = () => {
     const kitchen = useSelector(selectKitchen);
     const tv = useSelector(selectTV);
     const bathroom = useSelector(selectBathroom);
+    const isLoading = useSelector(selectIsLoading);
     
     async function getAllTrucks() {
         try {
@@ -139,9 +144,10 @@ const VehicleFilter = () => {
                     <p className={css.itemText}>Alcove</p>
                 </div>
             </div>
-            <button className={css.searchBtn} onClick={getAllTrucks}>
+            <button className={css.searchBtn} onClick={getAllTrucks} disabled={isLoading}>
                 Search
             </button>
+            {isLoading && <Loader />}
         </div>
     );
 };

@@ -1,50 +1,9 @@
-// import css from './TruckOption.module.css';
-// import sprite from "../../images/icon.svg";
-
-// const TruckOption=({data})=>{
-//     return(
-//         <div className={css.truckOptionContainer}>
-//             {data.transmission === 'automatic' ? (
-//                 <div className={css.optionItem}>
-//                     <svg className={css.icon}>
-//                         <use xlinkHref={`${sprite}#icon-diagram`}></use>
-//                     </svg>
-//                     <p className={css.optionText}>Automatic</p>
-//                 </div>
-//             ) : (
-//                 <div className={css.optionItem}>
-//                     <svg className={css.icon}>
-//                         <use xlinkHref={`${sprite}#icon-diagram`}></use>
-//                     </svg>
-//                     <p className={css.optionText}>Manual</p>
-//                 </div>
-//             )}
-//             {data.AC ? (
-//                 <div className={css.optionItem}>
-//                     <svg className={css.icon}>
-//                         <use xlinkHref={`${sprite}#icon-wind`}></use>
-//                     </svg>
-//                     <p className={css.optionText}>AC</p>
-//                 </div>
-//             ) : null}
-//             {data.gas ? (
-//                 <div className={css.optionItem}>
-//                     <svg className={css.icon}>
-//                         <use xlinkHref={`${sprite}#icon-fuel-pump`}></use>
-//                     </svg>
-//                 </div>
-//             ) : null}
-//         </div>
-//     )
-// }
-
-// export default TruckOption;
-
-
-import css from './TruckOption.module.css';
 import sprite from "../../images/icon.svg";
+import css from './TruckOption.module.css';
+
 
 const TruckOption = ({ data }) => {
+    
     function capitalizeFirstLetter(string) {
     return string.charAt(0).toUpperCase() + string.slice(1);
     }
@@ -58,7 +17,8 @@ const TruckOption = ({ data }) => {
                     </svg>
                     <p className={css.optionText}>{capitalizeFirstLetter(data.transmission)}</p>
                 </div>
-            ) : null}            
+            ) : null} 
+            
             {data.engine ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -66,7 +26,8 @@ const TruckOption = ({ data }) => {
                     </svg>
                     <p className={css.optionText}>{capitalizeFirstLetter(data.engine)}</p>
                 </div>
-            ) : null}  
+            ) : null} 
+            
             {data.AC ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -75,6 +36,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>AC</p>
                 </div>
             ) : null}
+
              {data.bathroom ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -83,6 +45,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>Bathroom</p>
                 </div>
             ) : null}
+
              {data.kitchen ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -91,6 +54,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>Kitchen</p>
                 </div>
             ) : null}
+
              {data.TV ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -99,6 +63,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>TV</p>
                 </div>
             ) : null}
+
              {data.radio ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -106,7 +71,8 @@ const TruckOption = ({ data }) => {
                     </svg>
                     <p className={css.optionText}>Radio</p>
                 </div>
-            ) : null}               
+            ) : null}
+            
              {data.refrigerator ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -115,6 +81,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>Refrigerator</p>
                 </div>
             ) : null}
+
              {data.microwave ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -123,6 +90,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>Microwave</p>
                 </div>
             ) : null}
+
              {data.gas ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -131,6 +99,7 @@ const TruckOption = ({ data }) => {
                     <p className={css.optionText}>Gas</p>
                 </div>
             ) : null}
+            
              {data.water ? (
                 <div className={css.optionItem}>
                     <svg className={css.icon}>
@@ -144,4 +113,5 @@ const TruckOption = ({ data }) => {
 }
 
 export default TruckOption;
+
 

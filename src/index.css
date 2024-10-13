@@ -1,11 +1,13 @@
 body {
-  letter-spacing: 0.04em;
   width: 1440px;
-  background: #ffffff;
+  margin: 0 auto;
+
   font-family: Inter;
   font-style: normal;
   font-weight: 400;
-  margin: 0 auto;
+  letter-spacing: 0.04em;
+
+  background: #ffffff;
 }
 
 h1,
@@ -15,6 +17,7 @@ h4,
 h5,
 h6 {
   margin: 0;
+
   font-weight: 500;
 }
 
@@ -26,6 +29,7 @@ ul,
 ol {
   margin: 0;
   padding: 0;
+
   list-style: none;
 }
 
@@ -41,8 +45,6 @@ img {
 
 button {
   cursor: pointer;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 500;
 }
 
 label {
