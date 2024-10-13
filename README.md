@@ -9,7 +9,7 @@ reviews, and make bookings.
 ### Key Features
 
 - **Home Page**: Showcases the main services with a prominent call to action.
-  ![Home page](src\assets\Home-page.png)
+  ![Home page](https://github.com/Natalia-Kalashnikova/TravelTrucks/blob/main/src/assets/Home-page.png)
 - **Camper Catalog**: Displays all available campers with filtering options
   (location, body type, amenities). ![Catalog page](src\assets\Catalog.png)
 - **Individual Camper Page**: Provides detailed information about a selected
