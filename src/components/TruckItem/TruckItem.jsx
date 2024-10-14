@@ -29,7 +29,7 @@ const TruckItem = ({ data }) => {
               <h2 className={css.name}>{data.name}</h2>
             <div className={css.priceWrapper}>              
               <p className={css.price}>€{data.price.toFixed(2)}</p>
-              <button className={css.buttonIcon} onClick={handleFavoriteClick}>
+              <button className={css.buttonIcon} onClick={handleFavoriteClick} aria-label="Like button">
                 {isFavorite ? (
                   <svg className={css.redHeartIcon}>
                     <use xlinkHref={`${sprite}#icon-property-heart`}></use>

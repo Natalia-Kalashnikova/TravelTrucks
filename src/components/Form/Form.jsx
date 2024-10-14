@@ -120,11 +120,11 @@ const Form = () => {
                         onChange={handleDateChange}
                         moveRangeOnFirstSelection={false}
                         ranges={state}
-                        minDate={new Date()} 
+                        minDate={new Date()}
                         rangeColors={['#475467']}
                     />
 
-                    <button className={css.selectDateBtn} type="button" onClick={handleDateSelect}>
+                    <button className={css.selectDateBtn} type="button" onClick={handleDateSelect} aria-label="Select date button">
                         Select Date
                     </button>
 
@@ -139,7 +139,7 @@ const Form = () => {
                 value={formState.comment}
             />
 
-            <button className={css.sendBtn} type="submit">Send</button>
+            <button className={css.sendBtn} type="submit" aria-label="Send button">Send</button>
             
         </form>
     );

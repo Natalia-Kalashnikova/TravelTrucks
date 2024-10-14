@@ -14,18 +14,18 @@ const LocationFilter =()=> {
         dispatch(setLocation(value));
     }
 
-    return(
+    return (
         <div className={css.location}>
             <label htmlFor="location" className={css.label}>
                 Location
             </label>
-            <input 
-                className={css.locationInput} 
-                type="text" 
-                id="location" 
-                placeholder="City" 
-                onChange={handleEnterLocation} 
-                value={location} 
+            <input
+                className={css.locationInput}
+                type="text"
+                id="location"
+                placeholder="City"
+                onChange={handleEnterLocation}
+                value={location}
             />
             <div className={css.locationWrapper}>
                 {location ? (
@@ -33,17 +33,17 @@ const LocationFilter =()=> {
                         <svg className={css.locationActiveIcon}>
                             <use xlinkHref={`${sprite}#icon-map`}></use>
                         </svg>
-                    </div>                    
+                    </div>
                 ) : (
                     <div >
                         <svg className={css.locationIcon}>
-                        <use xlinkHref={`${sprite}#icon-map`}></use>
+                            <use xlinkHref={`${sprite}#icon-map`}></use>
                         </svg>
                     </div>
                 )}
             </div>
         </div>
-    );
+    );    
 }
 
 export default LocationFilter;
