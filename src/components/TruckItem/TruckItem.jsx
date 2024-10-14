@@ -27,9 +27,9 @@ const TruckItem = ({ data }) => {
           <div className={css.data}>
             <div className={css.head}>
               <h2 className={css.name}>{data.name}</h2>
-            <div className={css.priceWrapper}>
-              <p className={css.price}>€{data.price}.00</p>
-              <div onClick={handleFavoriteClick}>
+            <div className={css.priceWrapper}>              
+              <p className={css.price}>€{data.price.toFixed(2)}</p>
+              <button className={css.buttonIcon} onClick={handleFavoriteClick}>
                 {isFavorite ? (
                   <svg className={css.redHeartIcon}>
                     <use xlinkHref={`${sprite}#icon-property-heart`}></use>
@@ -39,7 +39,7 @@ const TruckItem = ({ data }) => {
                     <use xlinkHref={`${sprite}#icon-property-heart`}></use>
                   </svg>
                 )}
-              </div>
+              </button>
              </div>
             </div>
             <div className={css.rating}>
@@ -67,4 +67,5 @@ const TruckItem = ({ data }) => {
 }
 
 export default TruckItem;
+
 

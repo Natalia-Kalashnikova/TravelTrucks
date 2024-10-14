@@ -31,7 +31,7 @@ const TruckTitle = () => {
                     </span>
                         
                 </div>
-                <p className={css.price}>€{data.price}</p>
+            <p className={css.price}>€{data.price ? data.price.toFixed(2) : '0.00'}</p>
             </div>
           ) : null}
         </>
